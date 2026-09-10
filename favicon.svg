@@ -1,0 +1,88 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+>
+  <defs>
+    <linearGradient
+      id="background"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop offset="0%" stop-color="#4f7cff" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <filter
+      id="shadow"
+      x="-20%"
+      y="-20%"
+      width="140%"
+      height="140%"
+    >
+      <feDropShadow
+        dx="0"
+        dy="2"
+        stdDeviation="2"
+        flood-color="#000000"
+        flood-opacity="0.2"
+      />
+    </filter>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect
+    width="64"
+    height="64"
+    rx="16"
+    fill="url(#background)"
+  />
+
+  <!-- dezenter Glanz -->
+  <path
+    d="M16 8
+       H48
+       C53 8 56 11 56 16
+       V21
+       C43 16 29 15 14 19
+       C11 20 9 21 8 22
+       V16
+       C8 11 11 8 16 8Z"
+    fill="#ffffff"
+    opacity="0.08"
+  />
+
+  <!-- Logo -->
+  <g
+    fill="#ffffff"
+    filter="url(#shadow)"
+  >
+    <!-- klein -->
+    <rect
+      x="16"
+      y="36"
+      width="7"
+      height="13"
+      rx="3.5"
+    />
+
+    <!-- mittel -->
+    <rect
+      x="28.5"
+      y="27"
+      width="7"
+      height="22"
+      rx="3.5"
+    />
+
+    <!-- groß -->
+    <rect
+      x="41"
+      y="17"
+      width="7"
+      height="32"
+      rx="3.5"
+    />
+  </g>
+</svg>

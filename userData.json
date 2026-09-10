@@ -1,0 +1,145 @@
+{
+  "user": {
+    "id": 1,
+    "name": "Demouser",
+    "email": "demomail@mail.com",
+    "role": "user",
+    "websites": [
+      {
+        "id": 1,
+        "user_id": 1,
+        "domain": "https://demowebsite.com",
+        "created_at": "2026-08-05T15:30:00",
+        "last_scan_at": null,
+        "next_scan_at": null,
+        "scans": [
+          {
+            "id": 6,
+            "website_id": 1,
+            "scan_type": "sec",
+            "scan_score": 80,
+            "pdf_path": "security_report_demo_snippet.pdf",
+            "created_at": "2026-09-09T15:30:00",
+            "findings": [
+              "Missing Content Security Policy",
+              "Missing X-Frame-Options",
+              "Missing X-Content-Type-Options",
+              "Missing Referrer Policy",
+              "Technology information exposed",
+              "Missing security.txt file"
+            ],
+            "changelog": [
+              { "title": "Public API endpoint exposed: /openapi.json", "type": "removed" },
+              { "title": "Permissive CORS configuration", "type": "removed" }
+            ],
+            "severity_counts": {
+              "critical": 0,
+              "high": 0,
+              "medium": 4,
+              "low": 2
+            }
+          },
+          {
+            "id": 5,
+            "website_id": 1,
+            "scan_type": "sec",
+            "scan_score": 72,
+            "pdf_path": "security_report_SEC-20260902160705",
+            "created_at": "2026-09-02T15:30:00",
+            "findings": [
+              "Missing Content Security Policy",
+              "Missing X-Frame-Options",
+              "Missing X-Content-Type-Options",
+              "Missing Referrer Policy",
+              "Permissive CORS configuration",
+              "Public API endpoint exposed: /openapi.json",
+              "Technology information exposed",
+              "Missing security.txt file"
+            ],
+            "severity_counts": {
+              "critical": 0,
+              "high": 0,
+              "medium": 6,
+              "low": 2
+            }
+          },
+          {
+            "id": 4,
+            "website_id": 1,
+            "scan_type": "sec",
+            "scan_score": 52,
+            "pdf_path": null,
+            "created_at": "2026-08-26T15:30:00",
+            "findings": [
+              "Exposed file: .env",
+              "Missing Content Security Policy",
+              "Missing X-Frame-Options",
+              "Missing X-Content-Type-Options",
+              "Missing Referrer Policy",
+              "Permissive CORS configuration",
+              "Public API endpoint exposed: /openapi.json",
+              "Technology information exposed",
+              "Missing security.txt file"
+            ],
+            "severity_counts": {
+              "critical": 0,
+              "high": 1,
+              "medium": 6,
+              "low": 2
+            }
+          },
+          {
+            "id": 3,
+            "website_id": 1,
+            "scan_type": "sec",
+            "scan_score": 52,
+            "pdf_path": null,
+            "created_at": "2026-08-19T15:30:00",
+            "findings": [
+              "Exposed file: .env",
+              "Missing Content Security Policy",
+              "Missing X-Frame-Options",
+              "Missing X-Content-Type-Options",
+              "Missing Referrer Policy",
+              "Permissive CORS configuration",
+              "Public API endpoint exposed: /openapi.json",
+              "Technology information exposed",
+              "Missing security.txt file"
+            ],
+            "severity_counts": {
+              "critical": 0,
+              "high": 1,
+              "medium": 6,
+              "low": 2
+            }
+          },
+          {
+            "id": 2,
+            "website_id": 1,
+            "scan_type": "sec",
+            "scan_score": 52,
+            "pdf_path": null,
+            "created_at": "2026-08-12T15:30:00",
+            "findings": [
+              "Exposed file: .env",
+              "Missing Content Security Policy",
+              "Missing X-Frame-Options",
+              "Missing X-Content-Type-Options",
+              "Missing Referrer Policy",
+              "Permissive CORS configuration",
+              "Public API endpoint exposed: /openapi.json",
+              "Technology information exposed",
+              "Missing security.txt file"
+            ],
+            "severity_counts": {
+              "critical": 0,
+              "high": 1,
+              "medium": 6,
+              "low": 2
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
