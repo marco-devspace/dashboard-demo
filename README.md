@@ -1,4 +1,4 @@
-# Web Application Security Dashboard
+# Web Application Security Platform
 
 > **Work in Progress**  
 > Dieses Projekt befindet sich aktuell in aktiver Entwicklung. Die bestehende Funktionalität wird kontinuierlich erweitert.
@@ -14,9 +14,10 @@ Der vollständige Funktionsumfang befindet sich aktuell in aktiver Entwicklung.
 
 ## Über das Projekt
 
-Das **Web Application Security Dashboard** dient zur zentralen Darstellung und Auswertung von Security-Scans für mehrere Webseiten.
+Die **Web Application Security Platform** besteht aus zwei eigenständigen Komponenten, die zusammen eine zentrale Lösung für die Durchführung und Auswertung von Security-Scans bilden.
 
-Ein separater **Web Application Security Scanner** untersucht Webseiten auf potenzielle Sicherheitsrisiken, klassifiziert die gefundenen Schwachstellen und erstellt daraus einen PDF-Report.
+Das **Web Application Security Dashboard** dient zur zentralen Darstellung und Auswertung der durchgeführten Security-Scans für mehrere Webseiten. <br>
+Der separate **Web Application Security Scanner** untersucht Webseiten auf potenzielle Schwachstellen, klassifiziert diese und erstellt daraus einen PDF-Report. Die Ergebnisse der Scans können anschließend über das Dashboard zentral eingesehen und über mehrere Scans hinweg verfolgt werden.
 
 Die Scan-Ergebnisse werden in einer **MySQL-Datenbank** gespeichert und anschließend über das Web Application Security Dashboard ausgewertet.
 
