@@ -16,9 +16,9 @@ Der vollständige Funktionsumfang befindet sich aktuell in aktiver Entwicklung.
 
 Das **Web Application Security Dashboard** dient zur zentralen Darstellung und Auswertung von Security-Scans für mehrere Webseiten.
 
-Ein separater **Security Scanner** untersucht Webseiten auf potenzielle Sicherheitsrisiken, klassifiziert die gefundenen Schwachstellen und erstellt daraus einen PDF-Report.
+Ein separater **Web Application Security Scanner** untersucht Webseiten auf potenzielle Sicherheitsrisiken, klassifiziert die gefundenen Schwachstellen und erstellt daraus einen PDF-Report.
 
-Die Scan-Ergebnisse werden in einer **MySQL-Datenbank** gespeichert und anschließend über das Dashboard ausgewertet.
+Die Scan-Ergebnisse werden in einer **MySQL-Datenbank** gespeichert und anschließend über das Web Application Security Dashboard ausgewertet.
 
 Zu den wichtigsten Funktionen gehören der **Security Score**, die Entwicklung des Scores über die Zeit, eine Scan-Historie, eine Übersicht der gefundenen Schwachstellen, ein Change Log sowie die Verwaltung mehrerer Webseiten.
 
@@ -28,7 +28,7 @@ Zu den wichtigsten Funktionen gehören der **Security Score**, die Entwicklung d
 
 ### Bereits umgesetzt
 
-- [x] Security Scanner für öffentlich erreichbare Webseiten
+- [x] Web Application Security Scanner für öffentlich erreichbare Webseiten
 - [x] Speicherung der Scan-Ergebnisse in MySQL
 - [x] Security Score auf Basis der gefundenen Schwachstellen
 - [x] Score-Entwicklung als Graph
@@ -36,7 +36,7 @@ Zu den wichtigsten Funktionen gehören der **Security Score**, die Entwicklung d
 - [x] Übersicht der letzten Scans
 - [x] Change Log für neue und behobene Schwachstellen
 - [x] Generierung von PDF-Security-Reports
-- [x] Verlinkung des letzten PDF-Reports im Dashboard
+- [x] Verlinkung des letzten PDF-Reports im Web Application Security Dashboard
 - [x] Docker-Unterstützung für Frontend, Backend und Datenbank
 
 ### Noch geplant
@@ -53,7 +53,7 @@ Zu den wichtigsten Funktionen gehören der **Security Score**, die Entwicklung d
 - **Frontend:** Angular, TypeScript, SCSS
 - **Backend:** Python, FastAPI, SQLAlchemy
 - **Datenbank:** MySQL
-- **Security Scanner:** Python
+- **Web Application Security Scanner:** Python
 - **Infrastruktur:** Docker
 - **Deployment:** GitHub Pages (Demoversion)
 
@@ -68,13 +68,13 @@ Der aktuelle manuelle Ablauf soll schrittweise zu einem automatisierten Prozess 
 ```text
 Wöchentlicher Scan
        ↓
-Security Scanner
+Web Application Security Scanner
        ↓
 Scan-Ergebnisse + PDF Report
        ↓
 MySQL / FastAPI
        ↓
-Dashboard
+Web Application Security Dashboard
        ↓
 Score & Change Log
        ↓
